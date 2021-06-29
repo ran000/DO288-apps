@@ -9,6 +9,7 @@ var response;
 
 app.get('/', function (req, res) {
 
+    msg = process.env.APP_MSG;
     response = 'Value in the APP_MSG env var is => ' + msg + '\n';
 
     // Read in the secret file
